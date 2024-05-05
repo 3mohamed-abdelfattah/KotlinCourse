@@ -50,5 +50,15 @@ fun main() {
         println()
     }
 
+    println("----------------------")
 
+    // While Loop
+
+    var x =1
+
+    do {
+        println("Do First $x")
+        x++
+    }
+    while (x <=1)
 }
