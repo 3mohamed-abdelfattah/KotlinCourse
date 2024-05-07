@@ -1,12 +1,12 @@
 package com.callKotlinInJava.models
 
-class kotlin (var name : String,cst :java){
+class kotlin(var name: String, cst: java) {
 
     init {
         val test = cst.customer("data")
     }
 
-    fun printInfo(){
+    fun printInfo() {
         println(name)
     }
 }

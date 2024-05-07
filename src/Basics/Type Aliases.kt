@@ -1,8 +1,9 @@
 package Basics
 
 typealias AuthToken = String
+
 fun main() {
-    val user= UserToken("Mohamed","43msa3odo2edc320dlq2ek-20")
+    val user = UserToken("Mohamed", "43msa3odo2edc320dlq2ek-20")
     UserAuth("kf5oo4awd2rf0f99pjf")
 }
 

@@ -1,30 +1,31 @@
 package Basics
+
 fun main() {
 
     val name = "Kotlin"
     val type = ""
-    val age : Int = 8
+    val age: Int = 8
 
-    val massgeTrim : String = """
+    val massgeTrim: String = """
         Hello,Dear
         My name Is Mohamed
         21 Years Old
     """.trimIndent()
 
-    val massge : String = """
+    val massge: String = """
         Hello,Dear
         My name Is Mohamed
         21 Years Old
     """
 
-    val massgeMargin : String = """
+    val massgeMargin: String = """
         --Hello,Dear
         --My name Is Mohamed
         --21 Years Old
     """.trimMargin("--")
 
 
-    val massgeReplace : String = """
+    val massgeReplace: String = """
         Hello,Dear
         My name Is Mohamed
         21 Years Old

@@ -4,26 +4,26 @@ fun main() {
 
     // For Loop
 
-    for (num in 0 until 10 step 2){
+    for (num in 0 until 10 step 2) {
         println(num)
     }
 
     println("----------------------")
 
-    for (num in 10 downTo 0 step 2){
+    for (num in 10 downTo 0 step 2) {
         println(num)
     }
 
     println("----------------------")
 
-    for (line in 0..5){
+    for (line in 0..5) {
         for (stars in 0..line) {
             print("*")
         }
         println()
     }
 
-    for (line in 5 downTo 0){
+    for (line in 5 downTo 0) {
         for (stars in line downTo 0) {
             print("*")
         }
@@ -32,9 +32,9 @@ fun main() {
 
     println("----------------------")
 
-    var number =1
-    for (line in 1..4){
-        for (num in 1..line){
+    var number = 1
+    for (line in 1..4) {
+        for (num in 1..line) {
             print(number++)
         }
         println()
@@ -54,11 +54,10 @@ fun main() {
 
     // While Loop
 
-    var x =1
+    var x = 1
 
     do {
         println("Do First $x")
         x++
-    }
-    while (x <=1)
+    } while (x <= 1)
 }

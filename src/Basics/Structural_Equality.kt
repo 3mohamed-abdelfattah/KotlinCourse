@@ -1,12 +1,11 @@
-
 fun main() {
 
-    val nameOne="Mohamed"
-    var nameTwo="Ahmed"
+    val nameOne = "Mohamed"
+    var nameTwo = "Ahmed"
 
     println(nameOne == nameTwo)
 
-    nameTwo="Mohamed"
+    nameTwo = "Mohamed"
 
     println(nameOne.equals(nameTwo))
 
@@ -14,8 +13,8 @@ fun main() {
 
     println("-----------------------------------")
 
-    var one =1
-    val two =2
+    var one = 1
+    val two = 2
 
     println(one === two)
 

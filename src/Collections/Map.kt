@@ -1,5 +1,3 @@
-
-
 fun main() {
 
     val names = mapOf(
@@ -25,11 +23,13 @@ fun main() {
     println(names.values)
 
 
-    println("""
+    println(
+        """
         -------------------------------------------------
                           Mutable Map
         -------------------------------------------------
-    """.trimIndent())
+    """.trimIndent()
+    )
 
 
     val mutableMap = mutableMapOf(
@@ -41,10 +41,10 @@ fun main() {
 
     println(mutableMap)
 
-    mutableMap.put(5,"test")
+    mutableMap.put(5, "test")
     println(mutableMap)
 
-    val rem =mutableMap.remove(2,"amer")
+    val rem = mutableMap.remove(2, "amer")
     println(mutableMap)
     println(rem)
 
@@ -62,15 +62,17 @@ fun main() {
         4 to "Rana"
     )
     val filter = names1.filterValues { it.contains("M") }
-        .map { it.value.substring(0,4) }
+        .map { it.value.substring(0, 4) }
     println(filter)
 
 
-    println("""
+    println(
+        """
         -------------------------------------------------
                           Map Not Null
         -------------------------------------------------
-    """.trimIndent())
+    """.trimIndent()
+    )
 
     val nullMap = mapOf(
         1 to "Mohamed",
@@ -79,19 +81,19 @@ fun main() {
         4 to "Rana",
     )
 
-    val res = nullMap.mapValues {it.toString().contains("null")}
+    val res = nullMap.mapValues { it.toString().contains("null") }
     println(res)
 
-    fun delNull (entry: Map.Entry<String,String>): Map.Entry<String, String>?{
+    fun delNull(entry: Map.Entry<String, String>): Map.Entry<String, String>? {
         if (entry.key.startsWith("n")) {
             return null
-        }else{
+        } else {
             return entry
         }
     }
 
     //Not null return!!!!
-    val res1 = nullMap.mapNotNull {it.value}
+    val res1 = nullMap.mapNotNull { it.value }
     println(res1)
 
 }
