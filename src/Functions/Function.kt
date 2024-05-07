@@ -1,33 +1,41 @@
 fun main() {
-    comment("""
+    comment(
+        """
         --------------------------------
               Function inside others
         --------------------------------
-    """.trimIndent())
+    """.trimIndent()
+    )
     sayHi()
-    comment("""
+    comment(
+        """
         --------------------------------
                One Line Function
         --------------------------------
-    """.trimIndent())
+    """.trimIndent()
+    )
     oneLine()
     comment()
     childTest(18)
     childTest(17)
     comment()
     person(name = "Mohamed", age = 21)
-    comment("""
+    comment(
+        """
         --------------------------------
                    Vararg
         --------------------------------
-    """.trimIndent())
-    printBook("Kotlin","Ahmed Sayed","Ramy Kamal","Mostafa Mahmoud")
-    comment("""
+    """.trimIndent()
+    )
+    printBook("Kotlin", "Ahmed Sayed", "Ramy Kamal", "Mostafa Mahmoud")
+    comment(
+        """
         --------------------------------
                    Overload
         --------------------------------
-    """.trimIndent())
-    printUser("Mohamed",99)
+    """.trimIndent()
+    )
+    printUser("Mohamed", 99)
 }
 
 // Function inside others
@@ -44,7 +52,7 @@ fun sayHi() {
 }
 
 //Single line Functions
-fun comment(com:String="--------------------------------") = println(com)
+fun comment(com: String = "--------------------------------") = println(com)
 
 fun oneLine() = println("One Line")
 
@@ -68,20 +76,20 @@ fun person(
 
 //Vararg
 fun printBook(
-    title:String,
-    vararg authers:String
-    ){
+    title: String,
+    vararg authers: String
+) {
     println("title:$title")
     authers.forEach { println("authers:$it") }
 }
 
 
 //Overload
-fun printUser(name:String){
+fun printUser(name: String) {
     println("My Name: $name")
 }
 
-fun printUser(name:String,wight:Int){
+fun printUser(name: String, wight: Int) {
     println("My Name: $name")
     println("My Wight: $wight")
 }
