@@ -1,16 +1,28 @@
-class UserCon(val first: String,val last: String,val boolean: Boolean){
+class UserCon(val first: String, val last: String, val boolean: Boolean) {
 
-    constructor(first: String,last: String):this(first,last,false){
-        println("Dd")
-    }
+    constructor(first: String, last: String) : this(first, last, false)
 
-    fun printTxt(){
-        println(first + last+boolean)
+    constructor(first: String) : this(first, "none")
+
+    fun printTxt() {
+        println(
+            """
+            $first
+            $last
+            $boolean
+            ----------------------
+        """.trimIndent()
+        )
     }
 }
 
 fun main() {
-    val user = UserCon("Hi", "Mohamed",false)
-    println(user.first)
-    user.printTxt()
+    val user1 = UserCon("Hi", "Mohamed", true)
+    user1.printTxt()
+
+    val user2 = UserCon("Hello", "Tamer")
+    user2.printTxt()
+
+    val user3 = UserCon("Welcome")
+    user3.printTxt()
 }
