@@ -6,8 +6,3 @@ fun main() {
     MyFood.list.add("Caviar")
     println(MyFood.list)
 }
-
-object MyFood {
-    var name = "Unknown"
-    var list = mutableListOf<String>()
-}
