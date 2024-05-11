@@ -42,5 +42,4 @@ fun main() {
     println("------------------")
     val orderCustomer = Orders(5934, myCopy.age.toString())
     println(orderCustomer)
-    dal;dmalda;'d,a'd,;',';,d;'a,;pd,a[',ld[al[l[],l';/']]
 }
