@@ -1,4 +1,5 @@
-data class DataClass(val name: String="Unknown", val age: Int=0)
+data class DataClass(val name: String = "Unknown", val age: Int = 0)
+data class Orders(val amount: Int = 0, val copy: String)
 
 fun main() {
     val st1 = DataClass("Mohamed", 21)
@@ -18,8 +19,28 @@ fun main() {
         $st4
     """.trimIndent()
     )
-    println("=============================")
-    val (name2,age) = DataClass(age = 2)
+    println(
+        """
+        ---------------------------
+               Destructuring
+        ---------------------------
+    """.trimIndent()
+    )
+    val (name2, age2) = DataClass(age = 2)
     println(name2)
-    println(age)
+    println(age2)
+    println(
+        """
+        ---------------------------
+                  Copying
+        ---------------------------
+    """.trimIndent()
+    )
+    val obj = DataClass("Osama", 99)
+    val myCopy = obj.copy(name = "Ali")
+    println(myCopy)
+    println("------------------")
+    val orderCustomer = Orders(5934, myCopy.age.toString())
+    println(orderCustomer)
+    dal;dmalda;'d,a'd,;',';,d;'a,;pd,a[',ld[al[l[],l';/']]
 }
