@@ -39,4 +39,11 @@ fun main() {
     println(Salary.LOW.printSomething())
     println(Salary.HIGH.money)
     println(Salary.MASTER.hour)
+    println("----------------------------------")
+    //Print Salary Value
+    for (i in Salary.values()) {
+        println(i)
+    }
+    //Print Salary Value as list
+    println(Salary.entries)
 }
