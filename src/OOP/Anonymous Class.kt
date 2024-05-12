@@ -7,19 +7,18 @@ open class Anonymous(val name: String) {
 
 fun main() {
 
-    val helloWorld = object {
+    val helloWorld = object:Anonymous("Anonymous") {
         val hello = "Hello"
         val world = "World"
         override fun toString() = "$hello $world"
-        val name = "Mohamed"
-        fun printName() {
-            println("Hi $name")
+        val name2 = "Mohamed"
+        fun printName2() {
+            println("Hi $name2")
         }
     }
-    val anonyPrint = Anonymous("Anonymous")
-    println(anonyPrint.printName())
+    helloWorld.printName()
     println("---------------------------------")
     println(helloWorld)
-    println(helloWorld.printName())
+    println(helloWorld.printName2())
 
 }
