@@ -60,10 +60,18 @@ fun main() {
     val agelist = mutableListOf(
         11, 42, 1, 4, 6, 45, 4, 32, 2, 5, 52, 5, 45, 2, 52, 5, 2, 68, 7, 99, 18, 0, 8, 97, 56, 745, 64, 63
     )
+    val agelistNew = buildList<Int> {
+        addAll(
+            listOf(
+                11, 42, 1, 4, 6, 45, 4, 32, 2, 5, 52, 5, 45, 2, 52, 5, 2, 68, 7, 99, 18, 0, 8, 97, 56, 745, 64, 63
+            )
+        )
+    }
     val children = agelist.filter(::isChild)
     println(children)
     println(children.find { it >= 19 })
 
+    println(agelistNew)
     println("--------------------------")
 
     //Flatten List
