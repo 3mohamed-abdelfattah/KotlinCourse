@@ -7,6 +7,7 @@ open class Anonymous(val name: String) {
 
 fun main() {
 
+    //Class One Time Use Only!?
     val helloWorld = object:Anonymous("Anonymous") {
         val hello = "Hello"
         val world = "World"
